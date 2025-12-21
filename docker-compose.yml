@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  modular-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: modular-agent
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    stdin_open: true
+    tty: true
+    volumes:
+      # Mount .env file if it exists (optional, can also use environment variable)
+      - ./.env:/app/.env:ro
+    # Keep container running for interactive use
+    command: python main.py
+
