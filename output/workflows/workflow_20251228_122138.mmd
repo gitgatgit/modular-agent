@@ -1,0 +1,12 @@
+graph TD
+    step0["coordinator: Initialize workflow"]
+    step1["coordinator: Delegate to Research Agent"]
+    step0 --> step1
+    step2["research: Research completed"]
+    step1 --> step2
+    step3["coordinator: Generate report"]
+    step2 --> step3
+    step4["writer: Report generated"]
+    step3 --> step4
+    step5["coordinator: Workflow complete"]
+    step4 --> step5

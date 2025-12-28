@@ -1,0 +1,73 @@
+{
+  "workflow_name": "Research: gdp",
+  "start_time": "2025-12-28T12:20:59.622849",
+  "end_time": "2025-12-28T12:21:03.812372",
+  "duration_seconds": 4.189523,
+  "completed": true,
+  "steps": [
+    {
+      "step_id": 0,
+      "type": "start",
+      "agent": "coordinator",
+      "action": "Initialize workflow",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:20:59.622892"
+    },
+    {
+      "step_id": 1,
+      "type": "agent_call",
+      "agent": "coordinator",
+      "action": "Delegate to Research Agent",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:20:59.622924"
+    },
+    {
+      "step_id": 2,
+      "type": "result",
+      "agent": "research",
+      "action": "Research completed",
+      "details": {
+        "steps": 0
+      },
+      "result": null,
+      "duration": 4.189385175704956,
+      "timestamp": "2025-12-28T12:21:03.812337"
+    },
+    {
+      "step_id": 3,
+      "type": "agent_call",
+      "agent": "coordinator",
+      "action": "Generate report",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:21:03.812357"
+    },
+    {
+      "step_id": 4,
+      "type": "result",
+      "agent": "writer",
+      "action": "Report generated",
+      "details": {
+        "saved": true
+      },
+      "result": null,
+      "duration": 1.9073486328125e-06,
+      "timestamp": "2025-12-28T12:21:03.812367"
+    },
+    {
+      "step_id": 5,
+      "type": "end",
+      "agent": "coordinator",
+      "action": "Workflow complete",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:21:03.812378"
+    }
+  ]
+}

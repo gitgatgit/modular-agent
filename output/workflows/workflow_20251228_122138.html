@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workflow: Research: ukraine conflict</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .step {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            background: #f9f9f9;
+        }
+        .step-header {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .step-details {
+            margin-left: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .summary {
+            margin-top: 30px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Workflow: Research: ukraine conflict</h1>
+        <p><strong>Duration:</strong> 6.47s</p>
+        <p><strong>Status:</strong> Completed</p>
+        
+        <h2>Steps</h2>
+
+        <div class="step">
+            <div class="step-header">Step 1: Initialize workflow</div>
+            <div class="step-details">
+                <p><strong>Agent:</strong> coordinator</p>
+                <p><strong>Type:</strong> start</p>
+
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">Step 2: Delegate to Research Agent</div>
+            <div class="step-details">
+                <p><strong>Agent:</strong> coordinator</p>
+                <p><strong>Type:</strong> agent_call</p>
+
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">Step 3: Research completed</div>
+            <div class="step-details">
+                <p><strong>Agent:</strong> research</p>
+                <p><strong>Type:</strong> result</p>
+<p><strong>Duration:</strong> 6.47s</p><p><strong>Details:</strong></p><ul><li>steps: 0</li></ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">Step 4: Generate report</div>
+            <div class="step-details">
+                <p><strong>Agent:</strong> coordinator</p>
+                <p><strong>Type:</strong> agent_call</p>
+
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">Step 5: Report generated</div>
+            <div class="step-details">
+                <p><strong>Agent:</strong> writer</p>
+                <p><strong>Type:</strong> result</p>
+<p><strong>Duration:</strong> 0.00s</p><p><strong>Details:</strong></p><ul><li>saved: True</li></ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">Step 6: Workflow complete</div>
+            <div class="step-details">
+                <p><strong>Agent:</strong> coordinator</p>
+                <p><strong>Type:</strong> end</p>
+
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <ul>
+<li>start: 1</li><li>agent_call: 2</li><li>result: 2</li><li>end: 1</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

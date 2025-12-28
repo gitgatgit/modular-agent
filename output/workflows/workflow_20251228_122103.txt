@@ -1,0 +1,28 @@
+======================================================================
+WORKFLOW: Research: gdp
+Duration: 4.19s
+======================================================================
+
+1. 🚀 [coordinator] Initialize workflow
+
+2. 🤖 [coordinator] Delegate to Research Agent
+
+3. ✅ [research] Research completed
+   ├─ steps: 0
+   └─ Duration: 4.19s
+
+4. 🤖 [coordinator] Generate report
+
+5. ✅ [writer] Report generated
+   ├─ saved: True
+   └─ Duration: 0.00s
+
+6. 🏁 [coordinator] Workflow complete
+
+======================================================================
+SUMMARY:
+  • start: 1
+  • agent_call: 2
+  • result: 2
+  • end: 1
+======================================================================

@@ -1,0 +1,73 @@
+{
+  "workflow_name": "Research: ukraine conflict",
+  "start_time": "2025-12-28T12:21:31.650675",
+  "end_time": "2025-12-28T12:21:38.118344",
+  "duration_seconds": 6.467669,
+  "completed": true,
+  "steps": [
+    {
+      "step_id": 0,
+      "type": "start",
+      "agent": "coordinator",
+      "action": "Initialize workflow",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:21:31.650695"
+    },
+    {
+      "step_id": 1,
+      "type": "agent_call",
+      "agent": "coordinator",
+      "action": "Delegate to Research Agent",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:21:31.650710"
+    },
+    {
+      "step_id": 2,
+      "type": "result",
+      "agent": "research",
+      "action": "Research completed",
+      "details": {
+        "steps": 0
+      },
+      "result": null,
+      "duration": 6.467564105987549,
+      "timestamp": "2025-12-28T12:21:38.118310"
+    },
+    {
+      "step_id": 3,
+      "type": "agent_call",
+      "agent": "coordinator",
+      "action": "Generate report",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:21:38.118329"
+    },
+    {
+      "step_id": 4,
+      "type": "result",
+      "agent": "writer",
+      "action": "Report generated",
+      "details": {
+        "saved": true
+      },
+      "result": null,
+      "duration": 1.6689300537109375e-06,
+      "timestamp": "2025-12-28T12:21:38.118338"
+    },
+    {
+      "step_id": 5,
+      "type": "end",
+      "agent": "coordinator",
+      "action": "Workflow complete",
+      "details": {},
+      "result": null,
+      "duration": null,
+      "timestamp": "2025-12-28T12:21:38.118349"
+    }
+  ]
+}
