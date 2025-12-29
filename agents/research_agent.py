@@ -18,7 +18,7 @@ def create_research_agent(api_key: str):
     
     # Define the LLM
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
+        model="gpt-5.2",
         temperature=0,
         api_key=api_key
     )
